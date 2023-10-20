@@ -1,0 +1,22 @@
+version = 1
+
+[[analyzers]]
+name = "php"
+
+  [analyzers.meta]
+  bootstrap_files = ["index.php"]
+
+[[analyzers]]
+name = "javascript"
+
+  [analyzers.meta]
+  plugins = [
+    "react",
+    "vue",
+    "ember",
+    "meteor"
+  ]
+  environment = [
+    "browser",
+    "jquery"
+  ]
